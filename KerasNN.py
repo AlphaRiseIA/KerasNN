@@ -8,7 +8,7 @@ DATA_2 = np.array(y)
 #We built up the NN
 dense1 = tf.keras.layers.Dense(units=3, input_shape=[1])
 dense2 = tf.keras.layers.Dense(units=3)
-out = tf.keras.layers.Dense(units=1)
+out = tf.keras.layers.Dense(units=1, activation='relu')
 #-----------------------------------------------------
 #We create a model and train it
 model = tf.keras.Sequential([dense1, dense2, out])
