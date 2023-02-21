@@ -5,7 +5,7 @@ import numpy as np
 DATA_1 = np.array(x)
 DATA_2 = np.array(y)
 #------------------------------------------------------
-#We boult up the NN
+#We built up the NN
 dense1 = tf.keras.layers.Dense(units=3, input_shape=[1])
 dense2 = tf.keras.layers.Dense(units=3)
 out = tf.keras.layers.Dense(units=1)
